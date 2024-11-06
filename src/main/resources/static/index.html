@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Operation</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h3>Enter SQL Query:</h3>
+    <textarea id="sqlInput" placeholder="Enter your SQL query here..."></textarea>
+
+    <h3>Select Database:</h3>
+    <div class="dropdown">
+        <button id="dropdownBtn" aria-expanded="false">Select Databases <span id="selectedCount" class="selected-count">0 selected</span></button>
+        <div id="dropdownContent" class="dropdown-content" style="display:none;">
+            <label>
+                <input type="checkbox" id="selectAll"> Select All
+            </label>
+            <div id="databaseOptions"></div>
+        </div>
+    </div>
+
+    <!-- Buttons container -->
+    <div>
+        <button id="downloadBtn" class="disabled" disabled>Download</button>
+        <button id="updateBtn" class="disabled" disabled>Update</button>
+        <button id="queryBtn" class="disabled" disabled>Download Query</button>
+		
+
+    </div>
+	<div id="progressDisplay" style="display:none;"></div>
+    <div id="message" class="message"></div>
+</div>
+
+<script src="/js/script.js"></script>
+</body>
+</html>
